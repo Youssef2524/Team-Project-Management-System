@@ -7,6 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+### Team Project Management System
+## Overview
+Team Project Management System (TPMS) is a web-based application built using the Laravel framework to help manage teams, projects, and tasks. The system provides project managers, developers, and testers with different roles and access to manage projects, track tasks, and contribute to the completion of projects.
+
+### Features
+
+
+Task Management: Create, update, and filter tasks based on status, priority, and project.
+User Roles: Users are assigned different roles (Manager, Developer, Tester) in projects.
+Manager: Can create and update tasks.
+Developer: Can update the status of tasks.
+Tester: Can add comments on tasks.
+Relationships: Handle many-to-many relationships between users and projects using pivot tables.
+Task Filtering: Filter tasks by status or priority.
+Task Prioritization: Fetch tasks based on latest, oldest, or highest priority.
+Authorization: Role-based access control for actions within the system.
+
+ ### 1.Requirements
+
+Before that, make sure you have the following installed:
+
+- PHP 7.4 or higher
+- Composer (dependencies manager for PHP)
+- Node.js and npm (to manage JavaScript dependencies)
+- MySQL (or other supported database system)
+-Postman (for testing the API) or Swagger
+
+### Installation
+1. git clone <https://github.com/Youssef2524.git>
+2. composer install
+3. Rename or copy .env.example file to .env
+4. php artisan key:generate
+5. php artisan migrate 
+6. php artisan db:seed 
+7. php artisan serve
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
